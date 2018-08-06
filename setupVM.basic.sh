@@ -5,7 +5,7 @@
 apt-get update
 apt install -y openjdk-8-jre-headless
 
-#Create a random password on the VM at the time of provisioning, note the passowrd isnt stored HERE!!
+#Create a random password on the VM at the time of provisioning, note the password isnt stored HERE!!
 mypass=$(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32};echo;)
 
 #Assign the created password to the user account allowed by SoftLayer (ie root)
